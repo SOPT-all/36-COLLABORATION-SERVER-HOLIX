@@ -1,5 +1,5 @@
 <!----[PullRequestType]/#IssueNumber: 작업 내용 -->
-<!----ex) [Setting]/#1: 이슈 템플릿을 생성합니다 -->
+<!----ex) [Add]/#1: 이슈 템플릿을 생성합니다 -->
 
 ## **🗣️ ISSUE**
 
