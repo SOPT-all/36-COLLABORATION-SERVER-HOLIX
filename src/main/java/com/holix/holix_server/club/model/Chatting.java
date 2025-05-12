@@ -22,7 +22,7 @@ public class Chatting {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @OneToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "club_id")
     private Club club;
 
@@ -32,6 +32,7 @@ public class Chatting {
     @Enumerated(EnumType.STRING)
     private ChattingType chattingType;
 
+    private boolean isMine;
     private LocalDateTime createdAt;
 
     @Builder
@@ -45,6 +46,7 @@ public class Chatting {
         this.contents = contents;
         this.likes = likes;
         this.chattingType = chattingType;
+        this.isMine = true;
         this.createdAt = LocalDateTime.now();
     }
 }
