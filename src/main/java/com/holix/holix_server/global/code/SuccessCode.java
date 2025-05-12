@@ -1,4 +1,4 @@
-package com.holix.holix_server.code;
+package com.holix.holix_server.global.code;
 
 import org.springframework.http.HttpStatus;
 

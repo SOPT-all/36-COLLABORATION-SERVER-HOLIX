@@ -1,8 +1,8 @@
-package com.holix.holix_server.dto.response;
+package com.holix.holix_server.global.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.holix.holix_server.code.ErrorCode;
-import com.holix.holix_server.code.SuccessCode;
+import com.holix.holix_server.global.code.ErrorCode;
+import com.holix.holix_server.global.code.SuccessCode;
 
 public record HolixResponse<T>(
         int code,

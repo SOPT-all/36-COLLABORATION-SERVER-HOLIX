@@ -1,7 +1,7 @@
-package com.holix.holix_server.exception;
+package com.holix.holix_server.global.exception;
 
-import com.holix.holix_server.code.CommonErrorCode;
-import com.holix.holix_server.dto.response.HolixResponse;
+import com.holix.holix_server.global.code.CommonErrorCode;
+import com.holix.holix_server.global.response.HolixResponse;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

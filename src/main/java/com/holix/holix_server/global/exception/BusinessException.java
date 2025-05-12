@@ -1,6 +1,6 @@
-package com.holix.holix_server.exception;
+package com.holix.holix_server.global.exception;
 
-import com.holix.holix_server.code.ErrorCode;
+import com.holix.holix_server.global.code.ErrorCode;
 
 public class BusinessException extends RuntimeException {
     private final ErrorCode errorCode;
