@@ -1,4 +1,4 @@
-package com.holix.holix_server.tag.model;
+package com.holix.holix_server.study.model.submodel;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -18,10 +18,10 @@ public class Tag {
     @Column(name = "tag_color", nullable = false)
     private  String tagColor;
 
-    protected Tag(){
+    public Tag(){
     }
 
-    protected Tag(
+    public Tag(
             String tagName,
             String tagColor
     ) {
