@@ -1,4 +1,4 @@
 package com.holix.holix_server.study.dto.request;
 
-public class StudyListRequest {
+public class StudyListRequestDTO {
 }
