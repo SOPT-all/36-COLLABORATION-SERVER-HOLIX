@@ -1,4 +1,4 @@
-package com.holix.holix_server.study.model;
+package com.holix.holix_server.tag.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

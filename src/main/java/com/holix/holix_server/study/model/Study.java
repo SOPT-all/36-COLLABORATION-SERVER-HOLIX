@@ -32,13 +32,13 @@ public class Study {
     }
 
     protected Study(
-            String title,
+            String studyTitle,
             String user,
             String price,
             String imgUrl,
             Category category
     ) {
-        this.studyTitle = title;
+        this.studyTitle = studyTitle;
         this.user = user;
         this.price = price;
         this.imgUrl = imgUrl;
