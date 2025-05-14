@@ -3,6 +3,9 @@ package com.holix.holix_server.study.model;
 import jakarta.persistence.*;
 import lombok.Getter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Getter
 @Table(name = "study")
 @Entity
@@ -27,6 +30,9 @@ public class Study {
     @Column(name = "category", nullable = false)
     @Enumerated(EnumType.STRING)
     private Category category;
+
+    @OneToMany(mappedBy = "study", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<StudyTag> studyTags = new ArrayList<>();
 
     protected Study() {
     }

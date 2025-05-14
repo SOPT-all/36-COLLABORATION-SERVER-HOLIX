@@ -18,10 +18,10 @@ public class Tag {
     @Column(name = "tag_color", nullable = false)
     private  String tagColor;
 
-    public Tag(){
+    protected Tag(){
     }
 
-    public Tag(
+    protected Tag(
             String tagName,
             String tagColor
     ) {
