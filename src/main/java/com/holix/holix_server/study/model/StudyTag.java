@@ -6,7 +6,6 @@ import lombok.Getter;
 
 @Entity
 @Getter
-@Table(name = "study_tag")
 public class StudyTag {
 
     @Id

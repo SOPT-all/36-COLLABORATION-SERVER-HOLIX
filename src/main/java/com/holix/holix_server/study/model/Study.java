@@ -7,27 +7,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Getter
-@Table(name = "study")
 @Entity
 public class Study {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "study_id", nullable = false)
     private Long studyId;
 
-    @Column(name = "study_title", nullable = false)
+    @Column(nullable = false)
     private String studyTitle;
 
-    @Column(name = "user", nullable = false)
+    @Column(nullable = false)
     private String user;
 
-    @Column(name = "price", nullable = false)
+    @Column(nullable = false)
     private String price;
 
-    @Column(name = "img_url", nullable = false)
+    @Column(nullable = false)
     private String imgUrl;
 
-    @Column(name = "category", nullable = false)
+    @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     private Category category;
 
