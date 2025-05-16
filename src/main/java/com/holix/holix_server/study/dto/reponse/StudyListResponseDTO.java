@@ -6,11 +6,11 @@ import java.util.List;
 
 @Getter
 public class StudyListResponseDTO {
-        private final List<StudyResponseDTO> passionateStudyResponseDTOList;
-        private final List<StudyResponseDTO> insightStudyResponseDTOList;
-        private final List<StudyResponseDTO> newStudyResponseDTOList;
-        private final List<StudyResponseDTO> recommendedStudyResponseDTOList;
-        private final List<StudyResponseDTO> freeStudyResponseDTOList;
+        private final List<StudyResponseDTO> passionateStudies;
+        private final List<StudyResponseDTO> insightStudies;
+        private final List<StudyResponseDTO> newStudies;
+        private final List<StudyResponseDTO> recommendedStudies;
+        private final List<StudyResponseDTO> freeStudies;
 
         public StudyListResponseDTO(
                 List<StudyResponseDTO> passionate,
@@ -19,11 +19,11 @@ public class StudyListResponseDTO {
                 List<StudyResponseDTO> recommended,
                 List<StudyResponseDTO> free
         ) {
-                this.passionateStudyResponseDTOList = passionate;
-                this.insightStudyResponseDTOList = insight;
-                this.newStudyResponseDTOList = news;
-                this.recommendedStudyResponseDTOList = recommended;
-                this.freeStudyResponseDTOList = free;
+                this.passionateStudies = passionate;
+                this.insightStudies = insight;
+                this.newStudies = news;
+                this.recommendedStudies = recommended;
+                this.freeStudies = free;
         }
 }
 
