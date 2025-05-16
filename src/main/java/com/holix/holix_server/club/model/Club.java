@@ -46,4 +46,8 @@ public class Club {
         this.participants = participants;
         this.maxParticipants = maxParticipants;
     }
+
+    public void updatePinStatus() {
+        this.isPinned = !isPinned;
+    }
 }
