@@ -4,7 +4,7 @@ import org.springframework.http.HttpStatus;
 
 public enum CommonErrorCode implements ErrorCode {
     // 404 Not Found
-    INVALID_URL_ERROR(HttpStatus.BAD_REQUEST, "지원하지 않는 URL 입니다."),
+    INVALID_URL_ERROR(HttpStatus.NOT_FOUND, "지원하지 않는 URL 입니다."),
 
     // 405 Method Not Allowed
     METHOD_NOT_ALLOWED_ERROR(HttpStatus.METHOD_NOT_ALLOWED, "잘못된 HTTP method 요청입니다."),
