@@ -22,6 +22,8 @@ public class Club {
 
     private String clubTitle;
     private Boolean isPinned;
+
+    @Column(columnDefinition = "TEXT")
     private String imgUrl;
 
     @Column(columnDefinition = "TEXT")
