@@ -60,3 +60,7 @@ jobs:
             docker rm holix-server || true
             docker pull ${{ secrets.DOCKER_USERNAME }}/holix-server
             docker run -d -p 8081:8080 --name holix-server ${{ secrets.DOCKER_USERNAME }}/holix-server
+
+            sudo systemctl reload nginx
+            
+            sudo certbot renew --quiet || true 
